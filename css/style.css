@@ -1,0 +1,438 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: #4a6bff;
+    --secondary-color: #6c757d;
+    --dark-color: #343a40;
+    --light-color: #f8f9fa;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+    --info-color: #17a2b8;
+    /* Cores dos ícones */
+    --html-color: #E34F26;
+    --css-color: #264DE4;
+    --js-color: #F7DF1E;
+    --react-color: #61DAFB;
+    --vue-color: #4FC08D;
+    --sass-color: #CC6699;
+    --git-color: #F05032;
+    --bootstrap-color: #7952B3;
+    --node-color: #339933;
+}
+
+/* Estilos gerais */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem 0;
+}
+
+.navbar.scrolled {
+    background-color: var(--dark-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    background: linear-gradient(45deg, var(--primary-color), #6c5ce7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%234a6bff" opacity="0.1" width="100" height="100"/></svg>');
+    background-size: 20px 20px;
+    opacity: 0.1;
+}
+
+.hero-image-container {
+    position: relative;
+    padding: 20px;
+}
+
+.hero-image {
+    animation: float 6s ease-in-out infinite;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.floating-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    animation: pulse 2s infinite;
+}
+
+.avatar-group {
+    display: flex;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -15px;
+    transition: transform 0.3s ease;
+}
+
+.avatar:hover {
+    transform: translateY(-5px);
+}
+
+.avatar:first-child {
+    margin-left: 0;
+}
+
+.hero-section h1 {
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-weight: 400;
+}
+
+/* Cursos Section */
+.cursos-section {
+    position: relative;
+    padding: 100px 0;
+}
+
+.cursos-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle fill="%234a6bff" opacity="0.05" cx="50" cy="50" r="40"/></svg>');
+    background-size: 30px 30px;
+    opacity: 0.1;
+}
+
+.curso-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+.curso-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.curso-card .card-body {
+    padding: 2rem;
+}
+
+.curso-card i {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Cores específicas para cada ícone */
+.fa-html5 {
+    color: var(--html-color);
+}
+
+.fa-css3-alt {
+    color: var(--css-color);
+}
+
+.fa-js {
+    color: var(--js-color);
+}
+
+.fa-react {
+    color: var(--react-color);
+}
+
+.fa-vuejs {
+    color: var(--vue-color);
+}
+
+.fa-sass {
+    color: var(--sass-color);
+}
+
+.fa-git-alt {
+    color: var(--git-color);
+}
+
+.fa-bootstrap {
+    color: var(--bootstrap-color);
+}
+
+.fa-node-js {
+    color: var(--node-color);
+}
+
+.fa-mobile-alt {
+    color: var(--primary-color);
+}
+
+.curso-card h3 {
+    font-weight: 500;
+}
+
+.curso-card p {
+    font-weight: 300;
+}
+
+/* Sobre Section */
+.sobre-section {
+    background-color: var(--light-color);
+}
+
+.sobre-section ul li {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.sobre-section ul li:hover {
+    transform: translateX(10px);
+}
+
+.sobre-section h2 {
+    font-weight: 700;
+}
+
+.sobre-section p {
+    font-weight: 400;
+}
+
+/* Contato Section */
+.contato-section {
+    background-color: white;
+}
+
+.contato-section h2 {
+    font-weight: 700;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: none;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.footer p {
+    font-weight: 400;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+}
+
+/* Animações */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 60px 0;
+    }
+    
+    .hero-image {
+        margin-top: 30px;
+        max-width: 80%;
+    }
+    
+    .avatar-group {
+        justify-content: center;
+    }
+    
+    .floating-badge {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    .curso-card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Botões */
+.btn {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary-color), #6c5ce7);
+    border: none;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 107, 255, 0.4);
+}
+
+.btn-outline-primary {
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Badges */
+.badge {
+    padding: 8px 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Depoimentos Section */
+.depoimentos-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.depoimento-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    background: white;
+}
+
+.depoimento-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.depoimento-card .card-body {
+    padding: 2rem;
+}
+
+.depoimento-card img {
+    border: 3px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.depoimento-card:hover img {
+    transform: scale(1.1);
+}
+
+.depoimento-card h5 {
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.depoimento-card small {
+    font-size: 0.8rem;
+}
+
+.depoimento-card .text-warning {
+    margin-top: 1rem;
+} 

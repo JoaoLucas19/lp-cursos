@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeMaster - Cursos de Front-end</title>
+    <!-- Google Fonts - Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">CodeMaster</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <span class="badge bg-primary mb-3">Cursos 100% Online</span>
+                    <h1 class="display-4 fw-bold mb-4">Transforme sua carreira com <span class="text-primary">programação front-end</span></h1>
+                    <p class="lead mb-4">Aprenda as tecnologias mais modernas do mercado e se torne um desenvolvedor front-end profissional.</p>
+                    <div class="d-flex gap-3">
+                        <button class="btn btn-primary btn-lg">Começar Agora</button>
+                        <button class="btn btn-outline-primary btn-lg">Ver Cursos</button>
+                    </div>
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center">
+                            <div class="avatar-group me-3">
+                                <img src="img/avatar1.jpg" class="avatar" alt="Aluno 1">
+                                <img src="img/avatar2.jpg" class="avatar" alt="Aluno 2">
+                                <img src="img/avatar3.jpg" class="avatar" alt="Aluno 3">
+                            </div>
+                            <p class="mb-0">+1000 alunos satisfeitos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image-container">
+                        <img src="img/hero-image.jpg" alt="Desenvolvimento Web" class="img-fluid hero-image">
+                        <div class="floating-badge">
+                            <i class="fas fa-star text-warning"></i>
+                            <span>4.9/5.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section id="cursos" class="cursos-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Cursos</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fab fa-html5 fa-3x mb-3"></i>
+                            <i class="fab fa-css3-alt fa-3x mb-3"></i>
+                            <h3 class="card-title">HTML5 & CSS3</h3>
+                            <p class="card-text">Aprenda a criar estruturas web modernas e estilizar com CSS3.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fab fa-js fa-3x mb-3"></i>
+                            <h3 class="card-title">JavaScript</h3>
+                            <p class="card-text">Domine a linguagem mais popular do desenvolvimento web.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fab fa-react fa-3x mb-3"></i>
+                            <h3 class="card-title">React.js</h3>
+                            <p class="card-text">Desenvolva interfaces modernas com a biblioteca mais popular.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fab fa-vuejs fa-3x mb-3"></i>
+                            <h3 class="card-title">Vue.js</h3>
+                            <p class="card-text">Crie aplicações web progressivas com Vue.js.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fab fa-sass fa-3x mb-3"></i>
+                            <h3 class="card-title">SASS & SCSS</h3>
+                            <p class="card-text">Aprenda a usar pré-processadores CSS para estilos mais eficientes.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fab fa-git-alt fa-3x mb-3"></i>
+                            <h3 class="card-title">Git & GitHub</h3>
+                            <p class="card-text">Controle de versão e colaboração em projetos web.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fab fa-bootstrap fa-3x mb-3"></i>
+                            <h3 class="card-title">Bootstrap 5</h3>
+                            <p class="card-text">Desenvolva sites responsivos com o framework mais popular.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fab fa-node-js fa-3x mb-3"></i>
+                            <h3 class="card-title">Node.js</h3>
+                            <p class="card-text">Desenvolva aplicações back-end com JavaScript.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card curso-card">
+                        <div class="card-body">
+                            <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                            <h3 class="card-title">Responsive Design</h3>
+                            <p class="card-text">Crie sites que se adaptam a qualquer dispositivo.</p>
+                            <a href="#" class="btn btn-outline-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section id="sobre" class="sobre-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="img/about-image.jpg" alt="Sobre Nós" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <h2>Sobre a CodeMaster</h2>
+                    <p>Somos uma plataforma especializada em cursos de programação front-end, com foco em qualidade e resultados práticos.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary"></i> Professores experientes</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> Projetos práticos</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> Suporte individualizado</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> Certificado reconhecido</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Entre em Contato</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Seu Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Seu Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Sua Mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 CodeMaster. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
